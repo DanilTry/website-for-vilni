@@ -1,0 +1,815 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+
+
+.details {
+    padding-top: 160px;
+    padding-bottom: 43px;    
+    background-color: #F5F5F5;
+}
+.details__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.details__content {
+    width: 1142px;
+    height: 350px;
+    padding: 40px;
+    display: flex;    
+    gap: 150px;
+    width: 100%;
+   
+}
+.donate-wrapper{
+    border: #000 solid 2px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+.detail__cla{
+    padding:  0 0 30px 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+.details__main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;
+
+}
+.cardpay {
+    background-color: #ffc942;
+    padding: 15px 55px 15px 15px;
+    width: 235px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    border: #000 solid 1.5px;
+    border-radius: 2px;
+
+}
+.mono {
+    background-color: #ffc942;
+    padding: 15px 55px 15px 15px;
+    width: 235px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    border: #000 solid 1.5px;
+    border-radius: 2px;
+}
+.details__items {
+    width: 50%;
+}
+.details__item {
+
+    width: 450px;
+    height: 85px;
+    border: #ffc942 solid 2px;
+    margin-bottom: 25px;
+    border-radius: 2px;
+}
+.item__crypto{
+    width: 850px;
+    height: 150px;
+    border: #ffc942 solid 2px;
+    margin-bottom: 25px;
+    border-radius: 2px;
+    display: flex;
+}
+.item-title {
+display: flex;
+justify-content: center;
+padding: 60px 200px 0 20px;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+}
+
+
+.item-subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+    padding: 2px 0 0 10px ;
+}
+
+.crypto{
+    padding: 20px 0 0 10px;
+}
+.crypto-block{
+    padding-top: 10px;
+}
+
+.crypto-column1{
+    display: flex;
+    flex-direction: row;
+}
+.item__crypto br{
+    display: none;
+}
+.details__content {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.details__columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+}
+.details__column1 {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.details-link{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    color: #000;
+}
+
+.details__column2 {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.details-item{
+    background-color: #ffc942;
+    padding: 15px 30px 15px 15px;
+    width: 355px;
+    height: 80px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    border: #000 solid 1.5px;
+    border-radius: 2px;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.donate-mavic {
+    width: 850px;
+    height: 100px;
+    margin-bottom: 25px;
+    border-radius: 2px;
+    display: flex;
+}
+.mavic-item {
+    background-color: #ffc942;
+    padding: 15px 30px 15px 15px;
+    width: 100%;
+    height: 80px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    border: #000 solid 1.5px;
+    border-radius: 2px;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.mavic-link {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    color: #000;
+}
+@media(max-width:980px){
+    .details__columns {
+        display: flex;
+        justify-content: space-between;
+        gap: 150px;
+    }
+    .donate-wrapper{
+        border: #000 solid 2px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column  ;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+        width: 100%;
+    }
+    .item-title {
+        display: flex;
+        justify-content: center;
+        padding: 60px 150px 0 20px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+@media(max-width:910px){
+    .details__columns {
+        display: flex;
+        justify-content: space-between;
+        gap: 80px;
+    }
+    .donate-wrapper{
+        border: #000 solid 2px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column  ;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+        width: 100%;
+    }
+    .item-title {
+        display: flex;
+        justify-content: center;
+        padding: 60px 120px 0 20px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .item__crypto{
+        width: 90%;
+        padding: 0 10px;
+        height: 150px;
+        border: #ffc942 solid 2px;
+        margin-bottom: 25px;
+        border-radius: 2px;
+        display: flex;
+    }
+    .donate-mavic{
+        width: 90%;
+    }
+}
+@media(max-width:871px){
+    .details__columns {
+        display: flex;
+        justify-content: space-between;
+        gap: 80px;
+    }
+    .donate-wrapper{
+        border: #000 solid 2px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column  ;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+        width: 100%;
+    }
+    .item-title {
+        display: flex;
+        justify-content: center;
+        padding: 60px 120px 0 20px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .item__crypto{
+        width: 90%;
+        padding: 0 10px;
+        height: 150px;
+        border: #ffc942 solid 2px;
+        margin-bottom: 25px;
+        border-radius: 2px;
+        display: flex;
+    }
+    .details-item{
+        background-color: #ffc942;
+        padding: 15px 30px 15px 15px;
+        width: 305px;
+        height: 80px;
+        color: #000;
+        font-size: 20px;
+        font-weight: 600;
+        border: #000 solid 1.5px;
+        border-radius: 2px;
+        color: #000;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width:867px){
+    .details__columns {
+        display: flex;
+        justify-content: space-between;
+        gap: 80px;
+    }
+    .donate-wrapper{
+        border: #000 solid 2px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column  ;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+        width: 100%;
+    }
+    .item-title {
+        display: flex;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        align-items: center;
+        padding: 0;        
+        }
+    .item__crypto{
+        width: 60%;
+        height: 200px;
+        border: #ffc942 solid 2px;
+        margin-bottom: 25px;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .details-item{
+        background-color: #ffc942;
+        padding: 15px 30px 15px 15px;
+        width: 305px;
+        height: 80px;
+        color: #000;
+        font-size: 20px;
+        font-weight: 600;
+        border: #000 solid 1.5px;
+        border-radius: 2px;
+        color: #000;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width:765px){
+    .details__columns {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    .donate-wrapper{
+        border: #000 solid 2px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column  ;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+        width: 100%;
+    }
+  
+    .item__crypto{
+        width: 60%;
+        height: 250px;
+        border: #ffc942 solid 2px;
+        margin-bottom: 25px;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .details-item{
+        background-color: #ffc942;
+        padding: 15px 30px 15px 15px;
+        width: 275px;
+        height: 80px;
+        color: #000;
+        font-size: 20px;
+        font-weight: 600;
+        border: #000 solid 1.5px;
+        border-radius: 2px;
+        color: #000;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    .item-title {
+        display: flex;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        align-items: center;
+        padding: 0;        
+        }
+}
+@media(max-width:650px){
+    .details__columns {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    .donate-wrapper{
+        border: #000 solid 2px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column  ;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+        width: 100%;
+    }
+  
+    .item__crypto{
+        width: 70%;
+        height: 250px;
+        border: #ffc942 solid 2px;
+        margin-bottom: 25px;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .details-item{
+        background-color: #ffc942;
+        padding: 15px 30px 15px 15px;
+        width: 255px;
+        height: 80px;
+        color: #000;
+        font-size: 20px;
+        font-weight: 600;
+        border: #000 solid 1.5px;
+        border-radius: 2px;
+        color: #000;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    .item-title {
+        display: flex;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        align-items: center;
+        padding: 0;        
+        }
+}
+@media(max-width:650px){
+    .details__columns {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .details__column1 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .details__column2 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .details{
+        height: 1100px;
+    }
+    .details__content {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        height: 550px;
+        }
+    .donate-wrapper{
+        border: #000 solid 2px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column  ;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 25px;
+    }
+  
+    .item__crypto{
+        width: 70%;
+        height: 250px;
+        border: #ffc942 solid 2px;
+        margin-bottom: 25px;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .details-item{
+        background-color: #ffc942;
+        padding: 15px 30px 15px 15px;
+        width: 255px;
+        height: 80px;
+        color: #000;
+        font-size: 20px;
+        font-weight: 600;
+        border: #000 solid 1.5px;
+        border-radius: 2px;
+        color: #000;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    .item-title {
+        display: flex;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        align-items: center;
+        padding: 0;        
+        }
+}
+@media(max-width:550px){
+    .details__columns {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .details__column1 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .details__column2 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .details{
+        height: 1100px;
+    }
+    .details__content {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        height: 550px;
+        }
+    .donate-wrapper{
+        border: #000 solid 2px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column  ;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 25px;
+    }
+  
+    .item__crypto{
+        width: 95%;
+        height: 250px;
+        border: #ffc942 solid 2px;
+        margin-bottom: 25px;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .details-item{
+        background-color: #ffc942;
+        padding: 15px 30px 15px 15px;
+        width: 255px;
+        height: 80px;
+        color: #000;
+        font-size: 20px;
+        font-weight: 600;
+        border: #000 solid 1.5px;
+        border-radius: 2px;
+        color: #000;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    .item-title {
+        display: flex;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        align-items: center;
+        padding: 0;        
+        }
+        .item__crypto br{
+            display: block;
+        }
+    }
+@media(max-width:400px){
+    .details__columns {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .details__column1 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .details__column2 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .details{
+        height: 1100px;
+    }
+    .details__content {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        height: 550px;
+        }
+    .donate-wrapper{
+        border: #000 solid 2px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column  ;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 25px;
+    }
+  
+    .item__crypto{
+        width: 95%;
+        height: 250px;
+        border: #ffc942 solid 2px;
+        margin-bottom: 25px;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .details-item{
+        background-color: #ffc942;
+        padding: 15px 30px 15px 15px;
+        width: 255px;
+        height: 80px;
+        color: #000;
+        font-size: 20px;
+        font-weight: 600;
+        border: #000 solid 1.5px;
+        border-radius: 2px;
+        color: #000;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    .item-title {
+        display: flex;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        align-items: center;
+        padding: 0;        
+        }
+        .item__crypto br{
+            display: block;
+        }
+    }
+
+
+
+    
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    top: 0;
+    left: 0;
+    z-index: 15;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 200;
+    
+    
+}
+
+.popup.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup.open .popup__content{
+    transform: perspective(600px) translate(0px 0%) rotate(0deg);
+    opacity: 1;
+}
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+.popup__content {
+    background: #FFC942;
+    position: relative;
+    border-radius: 10px;
+    height: 180px;
+    width: 450px;
+}
+.decoration{
+    background-color: black;
+    height: 1px;
+    margin-bottom: 25px;
+}
+
+.popup__title {
+    font-size: 36px;
+}
+.popup-textblock{
+    padding: 25px 0 0 25px;
+}
+.popup__subtitle {
+    font-size: 16px;
+    padding: 10px 0 20px 0;
+    color: #000;
+}
+.popup__text {
+    font-size: 15px;
+    padding: 0 25px 0 25px;
+    color: #000;
+}
+.close-png{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    height: 25px;
+    width: 25px;
+}
+
+
+.cover{
+    height: 800px;
+}
+
+
+
+
+.monobank {
+}
